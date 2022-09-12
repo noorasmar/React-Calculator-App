@@ -3,3 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --bg-color: #2980b9;
+  --arith-color: #d35400;
+  --num-color: #ecf0f1;
+  --clear-color: #bdc3c7;
+  --screen-color: #2c3e50;
+}
+body{
+  background-color: var(--bg-color);
+}

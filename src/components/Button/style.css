@@ -1,0 +1,45 @@
+button{
+    flex: 25%;
+    padding: 25px 35px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    cursor: pointer;
+}
+.num{
+    background-color: var(--num-color);
+    color: var(--screen-color);
+}
+.num:hover{
+    background-color: var(--arith-color);
+    color: var(--num-color);
+}
+.arith{
+    background-color: var(--arith-color);
+    color: var(--num-color);
+    font-size: 1.5rem;
+}
+.arith:hover{
+    background-color: var(--screen-color);
+    color: var(--num-color);
+}
+.clear{
+    flex: 100%;
+    background-color: var(--clear-color);
+    color: var(--screen-color);
+}
+.clear:hover{
+    background-color: var(--screen-color);
+    color: var(--num-color);
+}
+
+@media only screen and (max-width: 600px) {
+    button{
+        padding: 15px 25px;
+    }
+}
