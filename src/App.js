@@ -1,14 +1,20 @@
+import { dataContext } from './contexts/DataContext';
 import ScreenData from './components/ScreenData/index';
 import ButtonsList from './components/ButtonsList/index';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [arith, setArith] = useState('')
+  const [result, setResult] = useState(0)
+
   return (
     <div className="App">
-      <ScreenData data='123 + 5 ='/>
-      <ScreenData data='127' type='result'/>
-      <ButtonsList />
-      
+      <dataContext.Provider value={{result, setResult, arith, setArith}}>
+        <ScreenData data={arith} />
+        <ScreenData data={result} type='result'/>
+        <ButtonsList />
+      </dataContext.Provider>
     </div>
   );
 }
