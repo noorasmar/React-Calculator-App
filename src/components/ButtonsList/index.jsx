@@ -18,8 +18,8 @@ function ButtonsList() {
             <Button text='+' type='arith'/>
             <Button text='.' type='num'/>
             <Button text='0' type='num'/>
-            <Button text='=' type='num'/>
-            <Button text='+' type='arith'/>
+            <Button text='=' type='='/>
+            <Button text='*' type='arith'/>
             <Button text='clear' type='clear'/>
         </div>
     );
